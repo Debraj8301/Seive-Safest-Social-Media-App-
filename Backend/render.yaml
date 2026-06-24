@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: seive-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn fastapi_backend:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: HCD_ALLOWED_ORIGINS
+        value: https://your-netlify-site.netlify.app
+      - key: HCD_DATA_ROOT
+        value: ./data
+      - key: HCD_SUPABASE_URL
+        sync: false
+      - key: HCD_SUPABASE_PUBLISHABLE_KEY
+        sync: false

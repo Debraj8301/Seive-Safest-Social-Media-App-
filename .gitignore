@@ -1,0 +1,10 @@
+**/.env
+**/__pycache__/
+**/*.pyc
+**/*.log
+**/*.tsbuildinfo
+
+Frontend/node_modules/
+Frontend/dist/
+Frontend/vite.config.js
+Frontend/vite.config.d.ts

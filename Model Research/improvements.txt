@@ -1,0 +1,6 @@
+- Add OCR extraction and include OCR text.
+- Replace frozen-feature training with end-to-end fine-tuning of a stronger vision-language model.
+- Use cross-modal attention instead of only concatenation/Hadamard fusion.
+- Add a two-stage classifier for high precision.
+- Ensemble neural model + LightGBM + text-only model.
+- Recalibrate probabilities on validation.
